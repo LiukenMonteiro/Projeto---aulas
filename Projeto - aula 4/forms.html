@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Forms</title>
+</head>
+<body>
+    <center>
+    <h1>FORMULÁRIO</h1>
+    
+    <form method="GET">
+
+    <label for="input-value">Digite seu nome:</label>
+
+    <input type="text" placeholder="Digite seu nome">
+        <br>
+    <label for="input-value">Digite seu sobrenome:</label>
+    <input type="text" placeholder="entre com seu sobrenome">
+
+<br>
+<br>
+    <textarea placeholder="Fale sobre você" cols="31" rows="5"></textarea>
+<br>
+<br>
+    <input type="checkbox" id="esporte-0" value="bad" name="esporte" >Badminton
+    <input type="checkbox" id="esporte-1" value="fut" name="esporte" >Futebol
+    <input type="checkbox" id="esporte-2" value="vol" name="esporte" >Vôlei
+    <input type="checkbox" id="esporte-3" value="pet" name="esporte" >Peteca
+    <input type="checkbox" id="esporte-2" value="bas" name="esporte" >Basquete
+<br>
+<br>
+    <label for="hub1">  
+        <input type="radio" name="hub" id="hub1" value="sp">São Paulo
+    </label>
+    <label for="hub2">
+        <input type="radio" name="hub" id="hub1" value="bh">Belo Horizonte</label>
+    <label for="hub3">
+        <input type="radio" name="hub" id="hub3" value="fl">Florianópolis</label>
+    <label for="hub4">
+        <input type="radio" name="hub" id="hub4" value="mc">Macedônia</label>
+<br>
+<br>
+    <select name="estado" id="dropdown-estado">
+       <option value="sp">São Paulo</option>
+        <option value="ba">Bahia</option>
+        <option value="mg">Minas Gerais</option>
+        <option value="am">Amazonas</option>  
+    </select>
+
+    <select>
+        <option>Wesley</option>
+        <option>Pedro</option>
+        <option>Thiago</option>
+        <option>Márcio</option>
+    </select>
+<br>
+<br>
+
+<p>Usuário:</p>
+
+<input type="email" name="email" required>
+
+<p>Senha:</p>
+
+<input type="password" required>
+
+<br>
+<br>
+
+<input type="file">
+
+<br>
+<br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+</center>
+
+<a href="index.html"><img class="img1" src="voltar.png" width="40px"></a>
+<a href="index.html"><img class="img2" src="seta.png" width="40px"></a>
+
+</body>
+</html>
+
+<!-- 
+    Tendo como base o que foi feito na aula de hoje, elabora um formulário:
+
+    1. O fomurlário deve possuir um título "Reclame aqui"
+    2. O formulário deve possuir um input para nome, com placeholder "Insira seu nome".
+    3. O formulário deve possuir um input para sobrenome, com placeholder "Insira seu sobrenome".
+    3.1 - Faça um input para o numero de telefone
+    3.2 - faça um input para o email, este deve ser marcado como required.
+    4. O formulário deve possuir um input para idade, com placeholder "Insira sua idade".
+
+    5. Faça uma label de Endereço. <h3> Endereço: </h3>
+    5.1 - Faça uma label de Estado. <label> Estado: </label>
+    5.2 - Faça um select, contento em suas options, todos os estados do Brasil.
+
+    5.3 - Faça uma label de Cidade. <label> Cidade: </label>
+    5.4 - Faça um input para receber o endereço, com placeholder "Seu cidade".
+    5.5 - Faça um select, com option "casa", "apartamento", "condominio"
+    5.6 - Faça uma label de Numero. <label> Número </label>
+    5.7 - Faça um input para o numero da casa ou apartamento.
+
+    6. Faça 4 inputs do tipo "checked", que serão "Internet lenta", "Sem internet", "Sinal fraco", "Mudar senha"
+    6.1 - Faça um select, com option "Cabo", "fibra", "radio".
+    7. Faça uma label de visita. <label> Dia da visita: <label>
+    8. Faça 5 inputs do tipo "radio", que serão os dias da semana de segunda a sexta.
+    8. Faça um label de horario. <label> Horario da visita </label>
+    9. Faça um select, com as options contendo os horarios de 8 da manhã, até 17 da tarde, com diferenças de 30 minutos.
+    Ex: 08:00; 08:30; 09:00; 09:30.
+    10. Faça um button "enviar" do tipo "submit".
+
+    11. faça dois links, um contando a imagem "seta.png" e o outro contendo a imagem "voltar.png".
+
+    12. A imagem "seta.png" deve conter a class="img2".
+    12.1 - A imagem seta deve levar o usúario para um pagina de fim "Congratulations".
+    12.2 - A página "congratulations" deve conter um titulo "Parabéns pelo preenchimento do fórmulario!!!"
+    12.3 - A página "congratulations" deve conter um Subtitulo "Conte sempre com a gente!"
+    12.4 - A página "congratulations" deve conter um h3 "Estamos Disponiveis em todo o Brasil."
+    12.5 - A página "congratulations" deve conter a seta "voltar", que deve voltar para a página do formulário.
+
+    13. A imagem "voltar.png" deve contar a class="img1".
+    13.1 - A imagem seta deve levar o usúario para um pagina de Tabela.
+    13.2 - A página tabela deve ter um Titulo "Tabela de produtos"
+    13.3 - A tabela deve possuir em seus <th> os seguintes titulos "Fabricante" "Ip" "Sinal"
+    13.4 - A tabela deve possuir em seus <td> os nomes de várias marcas de roteador, com id e qualidade do sinal.
+    13.5 - Todos os nomes de roteadores devem ser links, mas apenas um será de verdade
+    14.6 - Todos os links falsos devem contar <a href="#">Nome Roteador</a>
+    15.7 - O link de roteador verdadeiro deve levar para a página de fórmulário.
+
+    Os dados de eroteadores verdadeiro estão dispostos em dados.js.
+
+    A apresentação do projeto deve começar com uma página em branco, com um único botão no mio da tela
+    O botão deve ser "iniciar", e ao clicado deve levar para a tabela.
+    Para o botão no meio da tela, use <center>
+    
+
+    
+    
+ -->
+
+
+
+
+
+
+
+
+
+
+
