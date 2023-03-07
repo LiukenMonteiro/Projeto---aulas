@@ -7,4 +7,4 @@
 - [x] 4: [_HTML TAGS - Formulários e inputs._](https://github.com/LiukenMonteiro/Projeto---aulas/tree/main/Projeto%20-%20aula%204)
 
 ### CSS 
-- [x] 1: [_CSS - Seletores e cores._]()
+- [x] 1: [_CSS - Seletores e cores._](https://github.com/LiukenMonteiro/Projeto---aulas/tree/main/Projeto%20-%20aula%205)
